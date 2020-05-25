@@ -1,0 +1,9 @@
+.modelo1 {
+    display: block;
+}
+.modelo2 {
+    display: inline;
+}
+.modelo3 {
+    display: inline-block;
+}
