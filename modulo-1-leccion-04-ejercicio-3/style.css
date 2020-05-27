@@ -1,0 +1,13 @@
+.contenedor {
+  width: auto;
+  height: 100px;
+  border: 2px solid pink;
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
