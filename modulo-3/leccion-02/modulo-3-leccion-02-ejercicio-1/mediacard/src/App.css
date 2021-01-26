@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(223, 221, 219);
+}
+
+.App {
+  text-align: left;
+  width: 350px;
+  background-color: white;
+  box-shadow: 9px 9px 30px -2px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  margin: 50px auto;
+}
+
+.App-avatar {
+  width: 100px;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.App-header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: black;
+  padding: 10px;
+}
+
+.App-spans {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.App-lorem {
+  padding-left: 10px;
+}
+
+.App-link {
+  color: #61dafb;
+  padding-left: 10px;
+}
+
+.App-read-more {
+  display: flex;
+  justify-content: space-between;
+}
+
+.App-likes span {
+  padding: 10px;
+}
+
+.App-heart {
+  color: red;
+  font-size: 22px;
+}
