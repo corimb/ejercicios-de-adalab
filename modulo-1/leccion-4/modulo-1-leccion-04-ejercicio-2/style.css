@@ -1,0 +1,13 @@
+.container {
+  width: 1000px;
+  height: 600px;
+  background: #fff;
+  border: 10px solid #2c3e50;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.element {
+  width: 200px;
+  height: 100px;
+}

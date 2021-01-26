@@ -1,0 +1,121 @@
+<!-- Hacer un listado de noticias con imagen, título y párrafo de contenido
+Meterlas en un contenedor flex y hacer que se distribuyan en dos columnas
+Elegir una noticia, por ejemplo, la última, y ponerla como destacada, en primer lugar y ocupando las dos columnas -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .image {
+        width: 100%;
+        max-height: 260px;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .news {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .news-block {
+        flex: 0 50%;
+        padding: 10px;
+    }
+
+    .fifth {
+        order: -1;
+        flex: 0 100%;
+    }
+</style>
+
+<body>
+    <main class="news">
+        <article class="news-block">
+
+            <img class="image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Parque_Eagle_River%2C_Anchorage%2C_Alaska%2C_Estados_Unidos%2C_2017-09-01%2C_DD_02.jpg/330px-Parque_Eagle_River%2C_Anchorage%2C_Alaska%2C_Estados_Unidos%2C_2017-09-01%2C_DD_02.jpg"
+                alt="Landscape">
+
+            <h2>Título1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero praesentium necessitatibus ut
+                rem?
+                Distinctio sit delectus architecto eaque officia quaerat modi ratione odit reiciendis debitis
+                aut
+                nobis laudantium, aspernatur neque.</p>
+        </article>
+        <article class="news-block">
+
+            <img class="image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Parque_Eagle_River%2C_Anchorage%2C_Alaska%2C_Estados_Unidos%2C_2017-09-01%2C_DD_02.jpg/330px-Parque_Eagle_River%2C_Anchorage%2C_Alaska%2C_Estados_Unidos%2C_2017-09-01%2C_DD_02.jpg"
+                alt="Landscape">
+
+            <h2>Título2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero praesentium necessitatibus ut
+                rem?
+                Distinctio sit delectus architecto eaque officia quaerat modi ratione odit reiciendis debitis
+                aut
+                nobis laudantium, aspernatur neque.</p>
+        </article>
+        <article class="news-block">
+
+            <img class="image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Parque_Eagle_River%2C_Anchorage%2C_Alaska%2C_Estados_Unidos%2C_2017-09-01%2C_DD_02.jpg/330px-Parque_Eagle_River%2C_Anchorage%2C_Alaska%2C_Estados_Unidos%2C_2017-09-01%2C_DD_02.jpg"
+                alt="Landscape">
+
+            <h2>Título3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero praesentium necessitatibus ut
+                rem?
+                Distinctio sit delectus architecto eaque officia quaerat modi ratione odit reiciendis debitis
+                aut
+                nobis laudantium, aspernatur neque.</p>
+        </article>
+        <article class="news-block">
+
+            <img class="image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Parque_Eagle_River%2C_Anchorage%2C_Alaska%2C_Estados_Unidos%2C_2017-09-01%2C_DD_02.jpg/330px-Parque_Eagle_River%2C_Anchorage%2C_Alaska%2C_Estados_Unidos%2C_2017-09-01%2C_DD_02.jpg"
+                alt="Landscape">
+
+            <h2>Título4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero praesentium necessitatibus ut
+                rem?
+                Distinctio sit delectus architecto eaque officia quaerat modi ratione odit reiciendis debitis
+                aut
+                nobis laudantium, aspernatur neque.</p>
+        </article>
+        <article class="news-block fifth">
+
+            <img class="image"
+                src="https://images.ctfassets.net/gxwgulxyxxy1/6Q8H3diZIuhGAljjV7VvFI/1b88248436ac6281842f8a94c4996956/jeremy-ricketts-FGvRZ-BeCKo-unsplash.jpg"
+                alt="Landscape">
+
+            <h2>Título5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero praesentium necessitatibus ut
+                rem?
+                Distinctio sit delectus architecto eaque officia quaerat modi ratione odit reiciendis debitis
+                aut
+                nobis laudantium, aspernatur neque.</p>
+        </article>
+
+
+    </main>
+</body>
+
+</html>
