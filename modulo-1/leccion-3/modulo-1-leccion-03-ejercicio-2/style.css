@@ -1,0 +1,18 @@
+.display1 {
+  width: 100px;
+  height: 100px;
+  display: block;
+  background-color: red;
+}
+.display2 {
+  width: 100px;
+  height: 100px;
+  display: inline;
+  background-color: green;
+}
+.display3 {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: cyan;
+}
