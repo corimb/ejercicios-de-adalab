@@ -1,0 +1,24 @@
+table {
+  border-collapse: collapse;
+  border: black 2px solid;
+}
+td {
+  margin: 5px;
+  padding: 10px;
+  border: black 1px solid;
+}
+.day {
+  border: black 2.5px solid;
+  border-bottom: black 4px solid;
+  padding: 20px;
+}
+.meals {
+  border-right: black 3px solid;
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
+}
+.header {
+  margin: 15px auto 20px 20px;
+  font-size: 25px;
+  font-style: italic;
+}
