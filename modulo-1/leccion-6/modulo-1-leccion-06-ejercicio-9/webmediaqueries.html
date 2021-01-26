@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web mediaqueries</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Quitar márgenes y padding por defecto */
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    ul,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 12px;
+    }
+
+    /* Añadir top & bottom padding de los títulos */
+    h1,
+    h2,
+    h3 {
+        padding: .5rem 0 2rem;
+    }
+
+    /* Quitar bullet points de la lista de links */
+    ul {
+        list-style-type: none;
+    }
+
+    /* Definir estilos de nav, article y aside */
+    nav {
+        background-color: greenyellow;
+        margin: 0;
+    }
+
+    article {
+        background-color: gold;
+
+    }
+
+    aside {
+        background-color: gray;
+        margin-top: 2rem;
+    }
+
+    /* Nuestro contenedor flex principal; lo activaré luego */
+    .container {
+        margin: 2rem 2.5rem;
+        background-color: lightgrey;
+        font-size: 1.6rem;
+        /* Padding para que el contenedor sobresalga por debajo del <aside> */
+        padding-bottom: 2rem;
+    }
+
+    /* Cuadrado naranja. No se va a ver porque no tiene height */
+    .orange {
+        background-color: orange;
+    }
+
+    /* Versión Tablet */
+    @media all and (min-width:480px) {
+
+
+        html {
+            /* Disminuimos tamaño de todo */
+            font-size: 11px;
+        }
+
+        /* Activo contenedor flex principal */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        /* Determinar las anchuras en % de los elementos flex */
+        nav {
+            width: 30%;
+            max-width: 20rem;
+        }
+
+        main {
+            width: 68%;
+            margin: auto;
+        }
+
+        article {
+            /* Activar contenedor flex */
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 1rem;
+        }
+
+        /* Hacer que los títulos ocupen tooooda la fila */
+        h1,
+        h2 {
+            width: 100%;
+        }
+
+        aside {
+            margin-top: 0;
+        }
+
+        /* Determinar anchuras en % de los elementos flex del article */
+        article>p {
+            flex: 3 1 60%;
+        }
+
+        .orange {
+            max-width: 25rem;
+            flex: 1 1 40%;
+            /* Al darle un height, ahora aparece en la pantalla */
+            height: 15rem;
+        }
+    }
+
+    /* Versión desktop */
+    @media all and (min-width:1000px) {
+
+        html {
+            /* Disminuimos todas las font un poquito más*/
+            font-size: 10px;
+        }
+
+        /* Ajustar tamaños y márgenes de flex items */
+        .container {
+            justify-content: space-between;
+        }
+
+        nav {
+            width: 15%;
+        }
+
+        article {
+            width: 80%;
+            margin-right: 2rem;
+        }
+
+        main {
+            width: 83%;
+            /* Activar tercer contenedor flex, para separar article y aside */
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0;
+            margin-left: 2%;
+        }
+
+        aside {
+            width: 20%;
+            margin: 0;
+            margin-left: auto;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Site name</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Link 1</a>
+                </li>
+                <li>
+                    <a href="#">Link 2</a>
+                </li>
+                <li>
+                    <a href="#">Link 3</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h2>
+                    Main heading here</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta accusantium maxime rerum, eligendi
+                    officia modi voluptatum deserunt cumque laboriosam porro iure. Maxime sapiente consequatur inventore
+                    at
+                    ullam expedita libero voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                    exercitationem debitis, temporibus obcaecati tempora quia blanditiis hic magnam nobis! Quo
+                    accusantium
+                    cum qui quia natus ex consectetur! Delectus, sequi adipisci. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Voluptatem, fugiat ea dolores eos dignissimos similique maiores sint non
+                    molestiae,
+                    voluptas eum esse! Corporis quis nesciunt est recusandae nam quam asperiores.</p>
+                <div class="orange"></div>
+            </article>
+
+            <aside>
+                <h3>Related info</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iusto facere quae soluta
+                    laboriosam
+                    voluptate. Soluta iste dolorum, beatae, aperiam ad vel voluptatibus dolorem molestias iure odio,
+                    excepturi commodi officiis.</p>
+            </aside>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
