@@ -1,0 +1,22 @@
+Al abrir la pestaña Network aparece vacía así que comienza a hacer peticiones con la pestaña abierta. Con la información que obtienes de esta pestaña averigua:
+
+- dónde está el método de petición:
+Headers-General-Request Method: GET;
+
+- el código de la respuesta (recuerda que 200 es OK):
+Headers-General-Status Code: 200
+En la tabla: Status: 200
+
+- en las cabeceras de la petición busca una llamada user-agent, ¿qué puedes decir de su contenido?:
+Muestra los navegadores que acepta, (versiones) y los datos de mi ordenador (servidor cliente)
+
+- la respuesta del servidor en JSON:
+Es el body{objeto} que se muestra en Preview.
+count: 82;
+next: "http://swapi.dev/api/people/?search=&page=2"
+previous: null
+results: [{name: "Luke Skywalker", height: "172", mass: "77", hair_color: "blond", skin_color: "fair",…},…]
+
+
+- al recargar la página aparecen un montón de peticiones en la pestaña Network, ¿sabrías filtrar solo las que son de AJAX? Pista: antes de fetch las peticiones se hacían con el objeto XMLHttpRequest (XHR):
+Pestaña XHR
