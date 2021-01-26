@@ -1,0 +1,19 @@
+@mixin t($fontSize) {
+  font-size: $fontSize;
+}
+@mixin tablet($fontSize) {
+  font-size: $fontSize;
+}
+@mixin desktop($fontSize) {
+  font-size: $fontSize;
+}
+
+.title {
+  @include t(16px);
+  @media all and (min-width: 768px) {
+    @include tablet(18px);
+  }
+  @media all and (min-width: 1280px) {
+    @include desktop(20px);
+  }
+}
