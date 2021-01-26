@@ -1,0 +1,39 @@
+<!-- Hacer un enlace de descarga de un archivo (por ejemplo PDF) con una etiqueta que refleje el tipo del archivo y que siempre esté a la derecha. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dame PDFs</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+        align-items: center;
+    }
+
+    .icon {
+        width: 20px;
+        height: 30px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <p>Nombre del documento</p>
+        <a href="#" title="Descargar PDF">
+            <img class="icon" src="https://cdn0.iconfinder.com/data/icons/office-files-icons/110/Pdf-File-512.png"
+                alt="Icono PDF">
+        </a>
+    </div>
+</body>
+
+</html>
