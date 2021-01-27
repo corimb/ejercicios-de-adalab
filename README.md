@@ -4,7 +4,7 @@ Este repositorio contiene los ejercicios que hice durante el curso de Adalab (pr
 
 ## Tecnologías utilizadas:
 - Módulo 1
-<img src="images/html5.svg" width="60"> <img src="images/css3.svg" width="52">
+<img src="images/html5.svg" width="60"> <img src="images/css3.svg" width="52"> <img src="images/sass.svg" width="60">
 
 - Módulo 2
 <img src="images/html5.svg" width="60" > <img src="images/css3.svg" width="52"> <img src="images/sass.svg" width="60"> <img src="images/javascript.svg" width="85">
